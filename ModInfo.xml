@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="kanaverum-bloodmoon-server-status" />
+    <DisplayName value="BloodMoon Server Status" />
+    <Version value="1.0.0" />
+    <Description value="Auto-update clients with BloodMoon status via a CVAR to fill gap left by broken IsBloodMoon trigger in buffs.xml." />
+    <Author value="Jonathan Robertson (Kanaverum)" />
+    <Website value="https://github.com/jonathan-robertson/bloodmoon-server-status" />
+</xml>
