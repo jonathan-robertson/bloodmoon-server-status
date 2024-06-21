@@ -28,7 +28,7 @@ namespace BloodmoonServerStatus
         {
             try
             {
-                _log.Info($"If this mod generates any errors, you can check with {ModMaintainer} at {SupportLink} for updates and receive support.");
+                _log.Info($"If this 'Bloodmoon Server Status' mod generates any errors, you can check with {ModMaintainer} at {SupportLink} for updates and receive support.");
             }
             catch (Exception e)
             {
