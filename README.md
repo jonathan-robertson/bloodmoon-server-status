@@ -1,6 +1,6 @@
 # BloodMoon Server Status
 
-[![🧪 Tested On](https://img.shields.io/badge/🧪%20Tested%20On-1.0-blue.svg)](https://7daystodie.com/) [![📦 Automated Release](https://github.com/jonathan-robertson/bloodmoon-server-status/actions/workflows/release.yml/badge.svg)](https://github.com/jonathan-robertson/bloodmoon-server-status/actions/workflows/release.yml)
+[![🧪 Tested On](https://img.shields.io/badge/🧪%20Tested%20On-1.0%20b308-blue.svg)](https://7daystodie.com/) [![📦 Automated Release](https://github.com/jonathan-robertson/bloodmoon-server-status/actions/workflows/release.yml/badge.svg)](https://github.com/jonathan-robertson/bloodmoon-server-status/actions/workflows/release.yml)
 
 - [BloodMoon Server Status](#bloodmoon-server-status)
   - [Summary](#summary)
