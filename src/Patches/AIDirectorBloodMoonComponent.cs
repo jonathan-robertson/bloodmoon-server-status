@@ -13,7 +13,6 @@ namespace BloodmoonServerStatus.Patches
         {
             try
             {
-                _log.Warn("Prefix: StartBloodMoon triggered"); // TODO: remove
                 var players = GameManager.Instance.World.Players.list;
                 for (var i = 0; i < players.Count; i++)
                 {
@@ -36,7 +35,6 @@ namespace BloodmoonServerStatus.Patches
         {
             try
             {
-                _log.Warn("Prefix: EndBloodMoon triggered"); // TODO: remove
                 var players = GameManager.Instance.World.Players.list;
                 for (var i = 0; i < players.Count; i++)
                 {

@@ -19,12 +19,10 @@ namespace BloodmoonServerStatus.Handlers
             {
                 if (clientInfo == null)
                 {
-                    _log.Warn("local client");
                     HandleLocalPlayers(respawnType);
                 }
                 else
                 {
-                    _log.Warn("remote client");
                     HandleRemotePlayer(clientInfo, respawnType);
                 }
             }
@@ -36,19 +34,15 @@ namespace BloodmoonServerStatus.Handlers
 
         private static void HandleLocalPlayers(RespawnType respawnType)
         {
-            _log.Warn($"respawn type: {respawnType}");
             switch (respawnType)
             {
                 case RespawnType.NewGame: // local player creating a new game
                 case RespawnType.LoadedGame: // local player loading existing game
                 case RespawnType.Died: // existing player returned from death
                     var valueToSet = GameManager.Instance.World.aiDirector.BloodMoonComponent.BloodMoonActive ? 1 : 0;
-                    _log.Warn($"expected value: {valueToSet}");
                     var localPlayers = GameManager.Instance.World.GetLocalPlayers();
-                    _log.Warn($"total local players: {localPlayers.Count}");
                     for (var i = 0; i < localPlayers.Count; i++)
                     {
-                        _log.Warn($"local player {i} is alive? {localPlayers[i].IsAlive()}");
                         if (localPlayers[i].IsAlive())
                         {
                             localPlayers[i].SetCVar(ModApi.BloodMoonCvarName, valueToSet);
@@ -60,11 +54,9 @@ namespace BloodmoonServerStatus.Handlers
 
         private static void HandleRemotePlayer(ClientInfo clientInfo, RespawnType respawnType)
         {
-            _log.Warn($"respawn type: {respawnType}");
             if (!GameManager.Instance.World.Players.dict.TryGetValue(clientInfo.entityId, out var player)
                 || !player.IsAlive())
             {
-                _log.Warn($"remote player is either not present or is dead");
                 return; // player not found or player not ready
             }
 
@@ -74,7 +66,6 @@ namespace BloodmoonServerStatus.Handlers
                 case RespawnType.JoinMultiplayer: // existing player rejoining
                 case RespawnType.Died: // existing player returned from death
                     var valueToSet = GameManager.Instance.World.aiDirector.BloodMoonComponent.BloodMoonActive ? 1 : 0;
-                    _log.Warn($"expected value: {valueToSet}");
                     player.SetCVar(ModApi.BloodMoonCvarName, valueToSet);
                     break;
             }
