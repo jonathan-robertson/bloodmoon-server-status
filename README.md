@@ -1,19 +1,10 @@
 # BloodMoon Server Status
 
-[![🧪 Tested On 7DTD 1.1 (b14)](https://img.shields.io/badge/🧪%20Tested%20On-7DTD%201.1%20(b14)-blue.svg)](https://7daystodie.com/) [![📦 Automated Release](https://github.com/jonathan-robertson/bloodmoon-server-status/actions/workflows/release.yml/badge.svg)](https://github.com/jonathan-robertson/bloodmoon-server-status/actions/workflows/release.yml)
-
-- [BloodMoon Server Status](#bloodmoon-server-status)
-  - [Summary](#summary)
-    - [Support](#support)
-  - [Features](#features)
-    - [Example Usage](#example-usage)
-  - [Setup](#setup)
-    - [Environment / EAC / Hosting Requirements](#environment--eac--hosting-requirements)
-    - [Map Considerations for Installation or UnInstallation](#map-considerations-for-installation-or-uninstallation)
-    - [Windows PC (Single Player or Hosting P2P)](#windows-pc-single-player-or-hosting-p2p)
-      - [Critical Reminders](#critical-reminders)
-    - [Windows/Linux Installation (Server via FTP from Windows PC)](#windowslinux-installation-server-via-ftp-from-windows-pc)
-    - [Linux Server Installation (Server via SSH)](#linux-server-installation-server-via-ssh)
+[![🧪 Tested with 7DTD 1.2 (b27)](https://img.shields.io/badge/🧪%20Tested%20with-7DTD%201.2%20(b27)-blue.svg)](https://7daystodie.com/)
+[![🧪 Tested with 7DTD 1.1 (b14)](https://img.shields.io/badge/🧪%20Tested%20with-7DTD%201.1%20(b14)-blue.svg)](https://7daystodie.com/)
+[![✅ Dedicated Servers Supported ServerSide](https://img.shields.io/badge/✅%20Dedicated%20Servers-Supported%20Serverside-blue.svg)](https://7daystodie.com/)
+[![✅ Single Player and P2P Supported](https://img.shields.io/badge/✅%20Single%20Player%20and%20P2P-Supported-blue.svg)](https://7daystodie.com/)
+[![📦 Automated Release](https://github.com/jonathan-robertson/bloodmoon-server-status/actions/workflows/release.yml/badge.svg)](https://github.com/jonathan-robertson/bloodmoon-server-status/actions/workflows/release.yml)
 
 ## Summary
 
