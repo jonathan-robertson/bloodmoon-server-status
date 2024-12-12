@@ -4,7 +4,7 @@ using System;
 
 namespace BloodmoonServerStatus.Patches
 {
-    [HarmonyPatch(typeof(AIDirectorBloodMoonComponent), "StartBloodMoon")]
+    [HarmonyPatch(typeof(AIDirectorBloodMoonComponent), nameof(AIDirectorBloodMoonComponent.StartBloodMoon))]
     internal class AIDirectorBloodMoonComponent_StartBloodMoon_Patches
     {
         private static readonly ModLog<AIDirectorBloodMoonComponent_StartBloodMoon_Patches> _log = new ModLog<AIDirectorBloodMoonComponent_StartBloodMoon_Patches>();
@@ -26,7 +26,7 @@ namespace BloodmoonServerStatus.Patches
         }
     }
 
-    [HarmonyPatch(typeof(AIDirectorBloodMoonComponent), "EndBloodMoon")]
+    [HarmonyPatch(typeof(AIDirectorBloodMoonComponent), nameof(AIDirectorBloodMoonComponent.EndBloodMoon))]
     internal class AIDirectorBloodMoonComponent_EndBloodMoon_Patches
     {
         private static readonly ModLog<AIDirectorBloodMoonComponent_EndBloodMoon_Patches> _log = new ModLog<AIDirectorBloodMoonComponent_EndBloodMoon_Patches>();
