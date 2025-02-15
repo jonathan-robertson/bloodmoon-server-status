@@ -41,6 +41,20 @@ instead use something like this:
 <requirement name="CVarCompare" cvar="is_bloodmoon" operation="Equals" value="1" />
 ```
 
+### Another Quick Example
+
+Adding this to `buffs.xml` will cause the trader to be inaccessible during BloodMoon - even when server-side mods disable the trader's schedules so they otherwise stay open all night long.
+
+```xml
+<config>
+  <append xpath="/buffs/buff[@name='buffStatusCheck01']">
+    <effect_group>
+      <passive_effect name="NoTrader" operation="base_set" value="@is_bloodmoon" />
+    </effect_group>
+  </append>
+</config>
+```
+
 ## Setup
 
 Without proper installation, this mod will not work as expected. Using this guide should help to complete the installation properly.
