@@ -1,5 +1,6 @@
 # BloodMoon Server Status
 
+[![🧪 Tested with 7DTD 1.3 (b9)](https://img.shields.io/badge/🧪%20Tested%20with-7DTD%201.3%20(b9)-blue.svg)](https://7daystodie.com/)
 [![🧪 Tested with 7DTD 1.2 (b27)](https://img.shields.io/badge/🧪%20Tested%20with-7DTD%201.2%20(b27)-blue.svg)](https://7daystodie.com/)
 [![🧪 Tested with 7DTD 1.1 (b14)](https://img.shields.io/badge/🧪%20Tested%20with-7DTD%201.1%20(b14)-blue.svg)](https://7daystodie.com/)
 [![✅ Dedicated Servers Supported ServerSide](https://img.shields.io/badge/✅%20Dedicated%20Servers-Supported%20Serverside-blue.svg)](https://7daystodie.com/)
@@ -48,11 +49,11 @@ If you have trouble getting things working, you can reach out to me for support 
 
 ### Environment / EAC / Hosting Requirements
 
-Environment | Compatible | Does EAC Need to be Disabled? | Who needs to install?
---- | --- | --- | ---
-Dedicated Server | Yes | no | only server
-Peer-to-Peer Hosting | Yes | only on the host | only the host
-Single Player Game | Yes | Yes | self (of course)
+| Environment          | Compatible | Does EAC Need to be Disabled? | Who needs to install? |
+| -------------------- | ---------- | ----------------------------- | --------------------- |
+| Dedicated Server     | Yes        | no                            | only server           |
+| Peer-to-Peer Hosting | Yes        | only on the host              | only the host         |
+| Single Player Game   | Yes        | Yes                           | self (of course)      |
 
 > 🤔 If you aren't sure what some of this means, details steps are provided below to walk you through the setup process.
 
